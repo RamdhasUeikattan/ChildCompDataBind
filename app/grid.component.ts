@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, Input } from '@angular/core';
 
 /**
- * n-nord- github issue#7
+ * j-nord- github issue#7
  */
 @Component({
     selector: 'my-grid',
