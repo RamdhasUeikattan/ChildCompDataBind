@@ -1,0 +1,39 @@
+{
+  "name": "ej2-grid-angular-webpack",
+  "version": "0.0.1",
+  "description": "Syncfusion Angular Grid with webpack",
+  "main": "index.js",
+  "scripts": {
+    "rmf": "node ./node_modules/rimraf/bin dist",
+    "build": "node ./node_modules/typescript/bin/tsc",
+    "bundle": "node ./node_modules/webpack/bin/webpack",
+    "dev": "node ./node_modules/lite-server/bin/lite-server",
+    "start": "npm run rmf && npm run build & npm run bundle & npm run dev"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "~4.0.0",
+    "@angular/compiler": "~4.0.0",
+    "@angular/core": "~4.0.0",
+    "@angular/forms": "~4.0.0",
+    "@angular/http": "~4.0.0",
+    "@angular/platform-browser": "~4.0.0",
+    "@angular/platform-browser-dynamic": "~4.0.0",
+    "@angular/router": "~4.0.0",
+    "angular-in-memory-web-api": "~0.3.0",
+    "systemjs": "0.19.40",
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.1",
+    "zone.js": "^0.8.4",
+    "@syncfusion/ej2-ng-grids": "^1.0.17",
+    "@syncfusion/ej2-ng-buttons": "*"
+  },
+  "devDependencies": {
+    "lite-server": "^2.2.2",
+    "rimraf": "^2.5.2",
+    "typescript": "2.3.3",
+    "@types/node": "^6.0.46",
+    "@types/core-js": "^0.9.42",
+    "webpack": "^2.2.1"
+  }
+}
