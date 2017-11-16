@@ -9,8 +9,9 @@ export class DataService {
 
     }
 
-    public get(table: string,field: string, val: string): Observable<Object> {
-    return this.http.get(`${this.SERVICE_URI}${table}/?count=true&$top=12&$filter=${field} eq '${val}'`)
+    public get(table: string,field?: string, val?: string): Observable<Object> {
+    return field? this.http.get(`${this.SERVICE_URI}${table}/?count=true&$top=12&$filter=${field} eq '${val}'`)
+    .map((res) => res.json()) :  this.http.get(`${this.SERVICE_URI}${table}/?count=true&$top=12`)
     .map((res) => res.json());
     }
 }
